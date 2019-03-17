@@ -26,7 +26,7 @@ func TestNewClient(t *testing.T) {
 		wantClient *Client
 	}{
 		{
-			"test persisting host & keys",
+			"Test persisting host & keys",
 			args{"test-public-key", "test-private-key", "test.paycor.com"},
 			&Client{
 				host: "test.paycor.com",

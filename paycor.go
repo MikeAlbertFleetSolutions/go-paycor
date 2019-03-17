@@ -106,7 +106,7 @@ func (client *Client) GetDocumentListing(documentType string) (results map[strin
 	return
 }
 
-// GetLiveOrSavedReport retrieves the report identified by documentType & documentID using the specified parameters
+// GetLiveOrSavedReport retrieves the report identified by documentType & documentID
 func (client *Client) GetLiveOrSavedReport(documentType, documentID string) (results []byte, err error) {
 	results, err = client.makeRequest("GET", fmt.Sprintf("https://%s/documents/api/documents/%s/%s", client.host, documentType, documentID), nil)
 

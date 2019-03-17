@@ -1,5 +1,5 @@
 # go-paycor
-Go library for interacting with the Paycor's Reporting API.  This implements the minium needed to generate & download an exisitng report.
+Go library for interacting with Paycor's Reporting API.  This implements the minimum needed to generate & download an existing report.  The magic is with implementing the authentication scheme they use.
 
 You'll have to talk to them about getting access for your company.
 

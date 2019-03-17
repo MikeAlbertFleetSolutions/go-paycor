@@ -29,8 +29,8 @@ func (mac *mac) Sign(data []byte) (token string, err error) {
 	return
 }
 
-// SignRequest generates signature for a http.Request
-// creates close to an RFC 2104-compliant HMAC signature
+// SignRequest generates signature for a http request
+// creates close to a RFC 2104-compliant HMAC signature
 // sign these fields:
 //   HTTP Method (UPPERCASE)
 //   Content MD5 (optional)

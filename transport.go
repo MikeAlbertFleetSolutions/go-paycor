@@ -5,13 +5,13 @@ import (
 	"time"
 )
 
-// Transport holds what we need to customize http client
+// Transport holds what we need to customize the http client
 type transport struct {
 	mac       mac
 	transport http.RoundTripper
 }
 
-// RoundTrip sets Authorization header in request
+// RoundTrip sets Authorization & Date header in request
 func (t *transport) RoundTrip(req *http.Request) (resp *http.Response, err error) {
 	httpDate := time.Now().UTC().Format("Mon, 02 Jan 2006 15:04:05 GMT")
 
